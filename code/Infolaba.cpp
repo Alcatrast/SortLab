@@ -14,7 +14,7 @@ const int RANGE = 10000000;
 const int STEP = 100;
 const string MAINDIR = "C:\\TEMP\\sortdata";
 typedef void (*SortFunc)(int*, int);
-SortFunc* init() { SortFunc res[] = { quick_sort, insertion_sort,comb_sort,selection_sort, quick_sort,merge_sort, heap_sort, bubble_sort }; return res; }
+SortFunc* init() { SortFunc res[] = { bubble_sort, insertion_sort, comb_sort, selection_sort, quick_sort, merge_sort, heap_sort, bubble_sort }; return res; }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 long long execute_func(SortFunc f, int* arr, int n) {
 	auto start = chrono::high_resolution_clock::now();
